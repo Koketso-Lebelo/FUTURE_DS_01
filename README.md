@@ -61,12 +61,11 @@ Prepare inventory for seasonal demand spikes
 Review pricing strategies for high-volume, low-revenue products
 
 ## Project Structure
-online-retail-sales-analysis/
-│
-├── powerbi-dashboard.pbix
-├── screenshots/
-│   └── dashboard.png
-└── README.md
+online-retail-sales-analysis
+powerbi-dashboard.pbix
+screenshots
+dashboard.png
+README.md
 
 ## How to Use
 Open the .pbix file in Power BI Desktop
