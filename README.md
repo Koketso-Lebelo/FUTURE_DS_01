@@ -1,102 +1,104 @@
-# Project Overview
+# Online Retail Sales Dashboard - Power BI
 
-This project analyzes a real-world online retail transactional dataset to uncover insights into sales performance, product demand, customer activity, and geographic trends.
+![Power BI Dashboard Preview](dashboard-screenshot.png)
 
-Using Power BI, the raw dataset was cleaned, transformed, and visualized into an interactive dashboard designed to support business decision-making.
+An interactive **Power BI dashboard** built to analyze a real-world Online Retail transactional dataset. This project uncovers key insights into sales performance, top-performing products, customer behavior, and geographic trends to support data-driven business decisions.
 
-# Project Objectives (Stronger version)
-Analyze the Online Retail dataset to evaluate sales performance
-Identify high-revenue and high-demand products
-Understand customer purchasing patterns and behavior
-Examine country-level sales distribution
-Provide data-driven recommendations to improve revenue and growth
+##  Project Objectives
 
-# Dataset
- Source
+- Evaluate overall sales performance and trends
+- Identify high-revenue and high-demand products
+- Understand customer purchasing patterns and behavior
+- Analyze country-level sales distribution
+- Provide actionable recommendations to drive revenue and growth
 
-The dataset used in this project is the Online Retail Dataset from Kaggle:
- https://www.kaggle.com/datasets/ulrikthygepedersen/online-retail-dataset
+##  Dataset
 
-# Dataset Description
+**Source:** [Online Retail Dataset on Kaggle](https://www.kaggle.com/datasets/ulrikthygepedersen/online-retail-dataset)
 
-The dataset contains transactional data from a UK-based online retail store, capturing purchases made by customers over time.
+The dataset contains over **500,000 transactional records** from a UK-based online retail company (similar to real e-commerce platforms like those selling gifts and household items).
 
-It includes approximately 500,000+ records and reflects real-world business scenarios such as:
+### Key Columns
+- **InvoiceNo** — Transaction ID (C = Cancelled)
+- **StockCode** — Product identifier
+- **Description** — Product name
+- **Quantity** — Number of units purchased
+- **InvoiceDate** — Date and time of transaction
+- **UnitPrice** — Price per unit
+- **CustomerID** — Unique customer identifier
+- **Country** — Customer’s country
 
-Product purchases
-Customer transactions
-Returns and cancellations
-International sales
-# Key Columns Used
-Column	Description
-InvoiceNo	Unique transaction ID (“C” indicates cancelled orders)
-StockCode	Product identifier
-Description	Product name
-Quantity	Number of items purchased
-InvoiceDate	Date and time of transaction
-UnitPrice	Price per unit
-CustomerID	Unique customer identifier
-Country	Customer location
-# Data Cleaning & Preparation
+##  Data Cleaning & Preparation
 
-The raw dataset required preprocessing before analysis:
+Raw data was cleaned and transformed in Power BI:
+- Removed cancelled transactions (InvoiceNo starting with "C")
+- Filtered out negative quantities (returns)
+- Removed records with missing `CustomerID`
+- Converted data types where necessary
+- Created a new **Revenue** measure: `Revenue = Quantity × UnitPrice`
 
-Removed cancelled transactions (InvoiceNo starting with “C”)
-Filtered out negative quantities (returns)
-Removed records with missing CustomerID
-Converted columns to correct data types
-Created a calculated column:
-Revenue = Quantity * UnitPrice
+These steps ensured the analysis reflects only **completed, valid sales**.
 
-These steps ensured that the analysis reflects actual sales performance.
+##  Key Metrics (KPIs)
 
-# Key Metrics (KPIs)
+- **Total Revenue**
+- **Total Orders** (distinct InvoiceNo)
+- **Total Quantity Sold**
+- **Unique Customers**
+- **Average Order Value (AOV)**
+- **Total Countries**
 
-The following metrics were created to summarize the dataset:
+##  Dashboard Features
 
-Total Revenue
-Total Orders (distinct InvoiceNo)
-Total Quantity Sold
-Unique Customers
-Average Order Value
-Total Countries
-# Dashboard Features
+The interactive dashboard includes:
 
-The dashboard transforms the dataset into key business views:
+- **Revenue Trend Over Time** — Monthly sales performance
+- **Top 10 Products by Revenue** — High-value products
+- **Top 10 Products by Quantity** — High-demand (volume) products
+- **Revenue by Country** — Geographic sales distribution (with UK dominance highlighted)
+- **Order Trends** — Transaction activity over time
+- Slicers for Country, Time Period, and Product filtering
 
-Revenue Trend Over Time — monthly sales performance
-Top 10 Products by Revenue — identifies high-value products
-Top 10 Products by Quantity — highlights high-demand products
-Revenue by Country — shows geographic distribution of sales
-Order Trends — tracks transaction activity over time
-## Key Insights from the Data
-The United Kingdom dominates sales, contributing the majority of total revenue
-A small group of products generates most revenue, indicating strong product concentration
-Sales show seasonal patterns, with increased activity toward the end of the year
-Some products have high sales volume but lower revenue, suggesting pricing differences
-## Business Recommendations
+##  Key Insights
 
-Based on the dataset analysis:
+- The **United Kingdom** accounts for the vast majority of total revenue
+- A small number of products drive most of the revenue (strong product concentration)
+- Clear **seasonal patterns** — higher activity toward the end of the year (holiday season)
+- Some products have high sales volume but relatively lower revenue, indicating pricing or margin differences
 
-Focus on top-performing products to maximize revenue
-Expand into high-performing international markets
-Plan inventory around seasonal demand peaks
-Review pricing strategies for high-volume, low-revenue products
-## Project Structure
-powerbi-dashboard.pbix
-README.md
-## How to Use
-Open the .pbix file in Power BI Desktop
-Use filters to explore different countries and time periods
-Interact with visuals to analyze trends and performance
-## Project Outcome
+##  Business Recommendations
 
-This project demonstrates:
+- Prioritize stocking and marketing of **top revenue-generating products**
+- Focus expansion efforts on high-performing international markets
+- Optimize inventory planning around **year-end seasonal peaks**
+- Review pricing strategy for high-volume, low-revenue products to improve margins
 
-Data cleaning and preprocessing using real-world data
-Business-focused KPI development
-Dashboard design and data visualization in Power BI
-Ability to translate raw data into actionable insights
-# Author
 
-Koketso Lebelo
+##  How to Use
+
+1. Download or clone this repository
+2. Open `powerbi-dashboard.pbix` in **Power BI Desktop**
+3. Interact with the visuals and use the slicers to explore different countries, time periods, or products
+
+No additional setup or data sources required — everything is embedded.
+
+##  Technologies Used
+
+- **Power BI Desktop** — Data modeling, DAX measures, and visualization
+- **Power Query** — Data cleaning and transformation
+
+##  Project Outcome
+
+This project showcases:
+- Real-world data cleaning and preprocessing
+- Business-oriented KPI and measure development
+- Professional dashboard design and storytelling with data
+- Ability to derive actionable insights from raw transactional data
+
+---
+
+**Author:** Koketso Lebelo  
+
+
+
+
