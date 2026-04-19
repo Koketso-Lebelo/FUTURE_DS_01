@@ -37,7 +37,7 @@ InvoiceDate	Date and time of transaction
 UnitPrice	Price per unit
 CustomerID	Unique customer identifier
 Country	Customer location
-🧹 Data Cleaning & Preparation
+# Data Cleaning & Preparation
 
 The raw dataset required preprocessing before analysis:
 
