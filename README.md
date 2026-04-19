@@ -1,6 +1,6 @@
 # Online Retail Sales Dashboard - Power BI
 
-![Power BI Dashboard Preview](dashboard-screenshot.png)
+
 
 An interactive **Power BI dashboard** built to analyze a real-world Online Retail transactional dataset. This project uncovers key insights into sales performance, top-performing products, customer behavior, and geographic trends to support data-driven business decisions.
 
