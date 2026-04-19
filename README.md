@@ -77,7 +77,7 @@ The interactive dashboard includes:
 ##  How to Use
 
 1. Download or clone this repository
-2. Open `powerbi-dashboard.pbix` in **Power BI Desktop**
+2. Open `Future interns task 1.pbix` in **Power BI Desktop**
 3. Interact with the visuals and use the slicers to explore different countries, time periods, or products
 
 No additional setup or data sources required — everything is embedded.
