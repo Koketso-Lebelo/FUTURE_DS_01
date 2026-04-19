@@ -4,6 +4,10 @@
 
 An interactive **Power BI dashboard** built to analyze a real-world Online Retail transactional dataset. This project uncovers key insights into sales performance, top-performing products, customer behavior, and geographic trends to support data-driven business decisions.
 
+## Files Included:
+1. Future interns task 1.pbix – Main Power BI report file (3.43 MB)
+2. Online Retail Sales.mp4 – Screen recording / video walkthrough showing the report’s functionality and interactions
+
 ##  Project Objectives
 
 - Evaluate overall sales performance and trends
@@ -68,7 +72,7 @@ The interactive dashboard includes:
 
 ##  Business Recommendations
 
-- Prioritize stocking and marketing of **top revenue-generating products**
+- Prioritize stocking and marketing of top revenue-generating products
 - Focus expansion efforts on high-performing international markets
 - Optimize inventory planning around **year-end seasonal peaks**
 - Review pricing strategy for high-volume, low-revenue products to improve margins
@@ -77,15 +81,14 @@ The interactive dashboard includes:
 ##  How to Use
 
 1. Download or clone this repository
-2. Open `Future interns task 1.pbix` in **Power BI Desktop**
+2. Open `Future interns task 1.pbix` in Power BI Desktop
 3. Interact with the visuals and use the slicers to explore different countries, time periods, or products
 
-No additional setup or data sources required — everything is embedded.
 
 ##  Technologies Used
 
-- **Power BI Desktop** — Data modeling, DAX measures, and visualization
-- **Power Query** — Data cleaning and transformation
+- Power BI Desktop — Data modeling, DAX measures, and visualization
+- Power Query — Data cleaning and transformation
 
 ##  Project Outcome
 
@@ -95,7 +98,6 @@ This project showcases:
 - Professional dashboard design and storytelling with data
 - Ability to derive actionable insights from raw transactional data
 
----
 
 **Author:** Koketso Lebelo  
 
